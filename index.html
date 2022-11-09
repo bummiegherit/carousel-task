@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel/Slideshow</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/carousel.js"></script>
+</head>
+<body>
+        <!-- PREVIOUS BUTTON -->
+    <div class="carousel">
+        <button class="carousel-btn" id="btn-left" onclick="plusSlides(-1)">
+            <img class="btn-images" src="/images/double-left-icon.png" alt="">
+        </button>
+        <!-- CAROUSEL CONTAINER -->
+        <div class="carousel-image-cont"> 
+            <ul id="carousel-slide-cont">
+                <li class="carousel-slide">
+                    <img class="carousel-image fade" src="/images/image-1.jpg" alt="">
+                </li>
+                <li class="carousel-slide">
+                    <img class="carousel-image fade" src="/images/image-2.jpg" alt="">
+                </li>
+                <li class="carousel-slide">
+                    <img class="carousel-image fade" src="/images/image-3.jpg" alt="">
+                </li>
+                <li class="carousel-slide">
+                    <img class="carousel-image fade" src="/images/image-4.jpg" alt="">
+                </li>
+                <li class="carousel-slide fade">
+                    <img class="carousel-image"
+                    src="/images/image-5.jpg" alt="">
+                </li>
+                <li class="carousel-slide fade">
+                    <img class="carousel-image" src="/images/image-6.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+            <!-- PREVIOUS BUTTON -->
+        <button class="carousel-btn" id="btn-right" onclick="plusSlides(1)">
+            <img class="btn-images" src="/images/double-right-icon.png" alt="">
+        </button>
+            <!-- DOT SLIDER CHANGE -->
+        <div class="carousel-nav">
+            <button class="carousel-indi" onclick="currentSlide(1)"></button>
+            <button class="carousel-indi" onclick="currentSlide(2)"></button>
+            <button class="carousel-indi" onclick="currentSlide(3)"></button>
+            <button class="carousel-indi" onclick="currentSlide(4)"></button>
+            <button class="carousel-indi" onclick="currentSlide(5)"></button>
+            <button class="carousel-indi" onclick="currentSlide(6)"></button>
+        </div>
+    </div>
+</body>
+</html>
